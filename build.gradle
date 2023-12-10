@@ -8,12 +8,22 @@ buildscript {
         maven { url "https://jitpack.io" }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath 'com.android.tools.build:gradle:3.6.1'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
         //classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
+}
+
+/**扩展参数*/
+ext{
+    compileSdkVersion=33
+    applicationId="com.example.customviewx"
+    minSdkVersion=21
+    targetSdkVersion=33
+    versionCode=1
+    versionName="1.0.0"
 }
 
 allprojects {
